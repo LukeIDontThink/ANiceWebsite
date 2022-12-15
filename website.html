@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ANiceWebsite</title>
+    <link rel="stylesheet" href="https://www.google.com/css/dark.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body>
+    <h1>ANiceWebsite</h1>
+
+    <div class="animated-element">
+        <img src="https://source.unsplash.com/random" alt="A random image">
+    </div>
+
+    <script>
+        var animatedElement = document.querySelector('.animated-element');
+        anime({
+            targets: animatedElement,
+            translateX: 250,
+            rotate: '1turn',
+            backgroundColor: '#FFF',
+            duration: 2000
+        });
+    </script>
+</body>
+
+</html>
